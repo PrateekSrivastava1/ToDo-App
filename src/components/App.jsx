@@ -1,25 +1,23 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 function App() {
 
-    var initialItem = "A Item";
+  const [item, addnewitem] = useState("");
 
-    const [item, addnewitem] = useState("");
+  const [listItems, addListItems] = useState([]);
 
-    const[listItems, addListItems] = useState([]);
+  function addItemtoArray() {
+    // addListItem(event.target.value);
+    addListItems(prevItems => {
+      return [...prevItems, item];
+    })
+    // item = "";
+  }
 
-    function addItemtoArray(){
-        // addListItem(event.target.value);
-        addListItems(prevItems => {
-            return [...prevItems, item];
-        })
-        // item = "";
-    }
-
-    function addItem(event){
-        const newValue = event.target.value; 
-        addnewitem(newValue);
-        // console.log(newValue);
-    }
+  function addItem(event) {
+    const newValue = event.target.value;
+    addnewitem(newValue);
+    // console.log(newValue);
+  }
 
   return (
     <div className="container">
@@ -34,9 +32,9 @@ function App() {
       </div>
       <div>
         <ul>
-        {listItems.map((point) => {
-            return<li>{point}</li>
-        })}
+          {listItems.map((point) => {
+            return <li>{point}</li>
+          })}
         </ul>
       </div>
     </div>
