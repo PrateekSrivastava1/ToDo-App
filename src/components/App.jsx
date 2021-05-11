@@ -36,7 +36,7 @@ function App() {
         <h1>To-Do List</h1>
       </div>
       <div className="form">
-        <input type="text" onChange={addItem} value={item} />
+        <input type="text" onChange={addItem} value={item} /> 
         <button onClick={addItemtoArray} className="button1" type="submit">
           <span>+</span>
         </button>
