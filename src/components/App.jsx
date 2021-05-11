@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Heading from "./Heading";
-import Listitem from "./Listitem";
 function App() {
 
   const [item, addnewitem] = useState("");
@@ -25,7 +23,7 @@ function App() {
     <div className="container">
       <div className="heading">
         <h1>To-Do List</h1>
-    </div>
+      </div>
       <div className="form">
         <input type="text" onChange={addItem} value={item} />
         <button onClick={addItemtoArray} className="button1">
@@ -35,7 +33,7 @@ function App() {
       <div>
         <ul>
           {listItems.map((point) => {
-           <Listitem text={point}/> 
+            return <li>{point}</li>
           })}
         </ul>
       </div>
