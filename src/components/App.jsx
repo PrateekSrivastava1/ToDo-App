@@ -12,12 +12,22 @@ function App() {
       return [...prevItems, item];
     })
     // item = "";
+    addnewitem("");
   }
 
   function addItem(event) {
     const newValue = event.target.value;
     addnewitem(newValue);
     // console.log(newValue);
+  }
+
+  function toDelete(id) {
+    // console.log(id);
+    addListItems(prevItems => {
+      return prevItems.filter((item, index) => {
+        return index !== id;  
+      });
+    }); 
   }
 
   return (
@@ -27,15 +37,19 @@ function App() {
       </div>
       <div className="form">
         <input type="text" onChange={addItem} value={item} />
-        <button onClick={addItemtoArray} className="button1">
+        <button onClick={addItemtoArray} className="button1" type="submit">
           <span>+</span>
         </button>
       </div>
       <div>
         <ul>
-          {listItems.map(point => (
+          {listItems.map((point, index) => (
             <TodoItem
-              text={point} />
+              key={index}
+              id={index}
+              text={point}
+              itDelete={toDelete}
+            />
           ))}
         </ul>
       </div>
