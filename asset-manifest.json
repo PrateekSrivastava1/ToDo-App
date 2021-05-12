@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/ToDo-App/static/js/main.44750a6b.chunk.js",
+    "main.js.map": "/ToDo-App/static/js/main.44750a6b.chunk.js.map",
+    "runtime-main.js": "/ToDo-App/static/js/runtime-main.acf6d221.js",
+    "runtime-main.js.map": "/ToDo-App/static/js/runtime-main.acf6d221.js.map",
+    "static/js/2.39cbfe42.chunk.js": "/ToDo-App/static/js/2.39cbfe42.chunk.js",
+    "static/js/2.39cbfe42.chunk.js.map": "/ToDo-App/static/js/2.39cbfe42.chunk.js.map",
+    "index.html": "/ToDo-App/index.html",
+    "static/js/2.39cbfe42.chunk.js.LICENSE.txt": "/ToDo-App/static/js/2.39cbfe42.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.acf6d221.js",
+    "static/js/2.39cbfe42.chunk.js",
+    "static/js/main.44750a6b.chunk.js"
+  ]
+}
