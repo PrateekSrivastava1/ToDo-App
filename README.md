@@ -22,9 +22,14 @@ git clone https://github.com/prateek-pixels/ToDo-App.git
 Download files
 run: *npm install* in terminal to install node modules
 
-2. Install NPM packages
+2. Install NPM packages (one-time)
 ```
 npm install
 ```
 
-3. Enjoy :)
+3. Run App
+```
+npm start
+```
+
+4. Enjoy :)
