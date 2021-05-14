@@ -1,7 +1,6 @@
 
 ToDo list is a simple web application to save Your daily tasks in order not to miss anything.
 
-### Technologies used:
 ![Screen Shot](https://i.ibb.co/pydrs3r/rtodo-ss.jpg)
 
 
@@ -11,7 +10,6 @@ ToDo list is a simple web application to save Your daily tasks in order not to m
 * JavaScript
 * React.js
 
-### If you want to use it:
 ### Features:
 The project is based on storing list of your daily task. It provides simple UI to interact and perform basic operations like add and delete particular ToDo.
 
