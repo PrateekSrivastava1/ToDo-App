@@ -27,4 +27,9 @@ run: *npm install* in terminal to install node modules
 npm install
 ```
 
-3. Enjoy :)
+3. Run App
+```
+npm start
+```
+
+4. Enjoy :)
