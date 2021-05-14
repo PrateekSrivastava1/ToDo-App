@@ -25,9 +25,9 @@ function App() {
     // console.log(id);
     addListItems(prevItems => {
       return prevItems.filter((item, index) => {
-        return index !== id;  
+        return index !== id;
       });
-    }); 
+    });
   }
 
   return (
